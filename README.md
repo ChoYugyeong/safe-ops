@@ -1,5 +1,9 @@
 # safe-ops
 
+[![test](https://github.com/ChoYugyeong/safe-ops/actions/workflows/test.yml/badge.svg)](https://github.com/ChoYugyeong/safe-ops/actions/workflows/test.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![node](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg)](package.json)
+
 **Delete nothing you cannot restore.** A coding-agent skill and a small zero-dependency CLI for destructive operations on a developer machine.
 
 Every other guard rail tells an agent what it *should* not do. This one makes the dangerous thing impossible to do quietly: deletions become moves into a quarantine with checksums, protected paths are refused by the tool rather than by a paragraph of advice, and host mutations (install / upgrade / uninstall) take an exclusive lock so two agents cannot run them at once.
@@ -17,7 +21,7 @@ An agent was asked to audit a small Python package. The skill it was following r
 
 The instinct behind that failure — "make it clean" — is common and usually harmless. What made it catastrophic was that the destructive path had no measurement, no refusal, no lock, and no recovery.
 
-That is the gap this project fills.
+That is the gap this project fills. The full account is in [docs/INCIDENT.md](docs/INCIDENT.md).
 
 ## What it does
 
