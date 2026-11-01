@@ -1,0 +1,22 @@
+{
+  "name": "safe-ops",
+  "version": "2.0.0",
+  "description": "Guard rails for destructive operations: quarantine instead of delete, refuse protected paths, lock host mutations. Use before rm -rf / Remove-Item -Recurse, before uninstalling or reinstalling software, before wiping caches, or whenever a task says clean, reset, prune, or free-up-space.",
+  "author": {
+    "name": "ChoYugyeong",
+    "url": "https://github.com/ChoYugyeong"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/ChoYugyeong/safe-ops",
+  "repository": "https://github.com/ChoYugyeong/safe-ops",
+  "keywords": [
+    "safety",
+    "destructive-operations",
+    "quarantine",
+    "delete-protection",
+    "recovery",
+    "agent-skills",
+    "host-lock",
+    "cleanup"
+  ]
+}

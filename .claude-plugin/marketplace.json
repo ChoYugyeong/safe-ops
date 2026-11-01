@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cho-yugyeong",
+  "owner": {
+    "name": "ChoYugyeong",
+    "url": "https://github.com/ChoYugyeong"
+  },
+  "metadata": {
+    "description": "Small, defensive skills. safe-ops makes destructive operations reversible: quarantine with checksums instead of delete, protected paths refused by the tool, and host mutations serialized behind a lock."
+  },
+  "plugins": [
+    {
+      "name": "safe-ops",
+      "source": "./",
+      "description": "Guard rails for destructive operations. plan measures first, apply quarantines with a sha256 manifest, restore verifies, purge is the only irreversible command.",
+      "author": {
+        "name": "ChoYugyeong",
+        "url": "https://github.com/ChoYugyeong"
+      },
+      "category": "security",
+      "homepage": "https://github.com/ChoYugyeong/safe-ops",
+      "keywords": [
+        "safety",
+        "destructive-operations",
+        "quarantine",
+        "delete-protection",
+        "recovery"
+      ]
+    }
+  ]
+}

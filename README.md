@@ -54,13 +54,27 @@ Everything is recoverable by construction: a target is *moved*, never removed. `
 
 ## Install
 
-The skill is a directory: `SKILL.md` plus `bin/`. Copy it where your agent looks for skills.
+### As a Claude Code plugin
+
+```
+/plugin marketplace add ChoYugyeong/safe-ops
+/plugin install safe-ops@cho-yugyeong
+```
+
+### As a directory
+
+The skill is `SKILL.md` plus `bin/`. Copy it where your agent looks for skills:
 
 ```bash
-git clone https://github.com/<owner>/safe-ops.git
-cp -r safe-ops ~/.claude/skills/safe-ops      # Claude Code
-# or
-cp -r safe-ops ~/.agents/skills/safe-ops      # agent-neutral skills directory
+git clone https://github.com/ChoYugyeong/safe-ops.git
+cd safe-ops
+./install.sh                                        # -> ~/.claude/skills/safe-ops
+./install.sh "$HOME/.agents/skills/safe-ops"        # agent-neutral location
+```
+
+```powershell
+.\install.ps1                                       # -> %USERPROFILE%\.claude\skills\safe-ops
+.\install.ps1 -Destination "$env:USERPROFILE\.agents\skills\safe-ops"
 ```
 
 Requirements: Node.js 18+. No dependencies.
